@@ -7,7 +7,25 @@
 </head>
 <body>
 	<div class="headersection tamplate clear">
-		<h2>Dhaka International University.</h2>
+		<div class="logo">
+			<img src="images/logo.png" alt="Logo" />
+			<h2>Dhaka International University</h2>
+			<p>Our Website Description</p>
+		</div>
+		<div class="social">
+			<a href="#">
+				<img src="images/social/facebook.png" alt="Facebook" />
+			</a>
+			<a href="#">
+				<img src="images/social/twitter.png" alt="Twitter" />
+			</a>
+			<a href="#">
+				<img src="images/social/linkedin.png" alt="Linkedin" />
+			</a>
+			<a href="#">
+				<img src="images/social/googleplus.png" alt="GooglePlus" />
+			</a>
+		</div>
 	</div>
 	<div class="navsection tamplate clear">
 		<ul>
