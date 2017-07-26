@@ -31,18 +31,29 @@
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="about.php">About</a></li>
-			<li><a href="contact.php">Contact</a></li>
-			<li><a href="notice.php">Notice</a></li>
-			<li><a href="register.php">Register</a>
+			<li><a href="product.php">Product</a>
 				<ul>
-					<li><a href="studentsReg.php" target="_blank">Students Register</a></li>
-					<li><a href="teachersReg.php">Teachers Register</a></li>
+					<li><a href="#">Product One</a></li>
+					<li><a href="#">Product Two</a></li>
+					<li><a href="#">Product Three</a></li>
+					<li><a href="#">Product Four</a></li>
+					<li><a href="#">Product Five</a></li>
 				</ul>
-			</li>			
+			</li>
+			<li><a href="contact.php">Contact</a>
+				<ul>
+					<li><a href="#">Address One</a></li>
+					<li><a href="#">Address Two</a></li>
+					<li><a href="#">Address Three</a></li>
+					<li><a href="#">Address Four</a></li>
+					<li><a href="#">Address Five</a></li>
+				</ul>
+			</li>
+			<li><a href="notice.php">Notice</a></li>
+			
 			<li><a href="login.php">Login</a></li>
 		</ul>
 	</div>
-	
 	<div class="contentsection tamplate clear">
 		<div class="maintcontent tamplate clear">
 			<div class="samepost clear">

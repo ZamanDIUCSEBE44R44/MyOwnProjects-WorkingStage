@@ -2,47 +2,15 @@
 body{background:#F0C969; font-family:arial;font-size:14px;line-height:18px; color#000;}
 .tamplate{width:960px; margin:0px auto}
 .clear{overflow:hidden;}
-.headersection{
-	background-color:#33412F; 
-	color:#fff;
-	}
-.logo {
-  float: left;
-  width: 430px;
+.headersection{height:85px; background-color:black; color:#fff;}
+.headersection h2 {
+	font-size: 40px;
+	text-align: center;
+	padding: 30px;
 }
-.logo img {
-  float: left;
-  margin-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-top: 10px;
-  width: 70px;
-}
-.logo h2 {
-  color: #fff;
-  font-size: 22px;
-  margin-bottom: 15px;
-  margin-top: 23px;
-  text-shadow: 2px 3px 0 #666;
-}
-.logo p{}
-.social {
-  float: right;
-  padding-top: 4px;
-  width: 255px;
-}
-.social img {
-  width: 60px;
-}
-
-
-
-.navsection {
-  background: #9b999a none repeat scroll 0 0;
-  min-height: 48px;
-}
+.navsection{background:#9B999A;}/*height:30px;*/
 .navsection ul{margin:0; padding:0; list-style:none}
-.navsection ul li{display:block; float:left;position:relative;}
+.navsection ul li{display:block; float:left}
 .navsection ul li a {
 	display: block;
 	background: #CDCBCC;
@@ -53,22 +21,15 @@ body{background:#F0C969; font-family:arial;font-size:14px;line-height:18px; colo
 	font-size: 20px;
 	font-weight: bold;
 	color: #444;
-	
 }
 .navsection ul li a:hover{
 	background:#2E2D2F;
 	color:#fff;
 	
 }
-
-.navsection ul li ul{position:absolute;left:-99999999px;}
-.navsection ul li:hover ul{left:0px}
-.navsection ul li ul li{background:#9B999A; width:200px; border-bottom:1px solid #33412F; float:none}
-.navsection ul li ul li a{}
-
 .contentsection{background:#FFFFFF}
 .maintcontent {
-  background: #F4CEBD none repeat scroll 0 0;
+  background: #e0dfe1 none repeat scroll 0 0;
   float: left;
   margin: 15px 15px 15px 0;
   padding: 10px;
@@ -111,7 +72,7 @@ body{background:#F0C969; font-family:arial;font-size:14px;line-height:18px; colo
 }
 .readmore a:hover{color:#00ADED}
 .sidebar {
-	background: #F4CEBD none repeat scroll 0 0;
+	background: #E0DFE1 none repeat scroll 0 0;
 	float: right;
 	margin-top: 15px;
 	padding: 10px;
@@ -129,7 +90,7 @@ body{background:#F0C969; font-family:arial;font-size:14px;line-height:18px; colo
 .samesidebar p {
 	margin-bottom: 10px;
 }
-.footer{height:90px;background:#33412F;}
+.footer{height:90px;background:#555555;}
 .footer p {
 	color: #FFF;
 	text-align: center;
