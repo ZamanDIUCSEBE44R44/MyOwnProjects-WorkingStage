@@ -110,7 +110,7 @@
 <!--	<div style=clear:both></div>	-->
 	<div class="footer tamplate clear">
 		
-		<p>This is Footer.</p>
+		<p>Dhaka International University</p>
 	</div>
 	
 </body>
