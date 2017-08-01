@@ -42,9 +42,9 @@ if(isset($_POST['submit'])){
 <body>
 <h1 align="center">This is My Own First Creative Project.</h1><hr />
 	<form action="" method="post">
-	<p>Investing Date: <br /> <input type="date" name="investing_date" id="" /> </p>
-	<p>Fittings: <br /> <input type="text" name="fittings" id="" /> </p>
-	<p>Amount Of Money: (Taka) <br /> <input type="text" name="amount_of_money" id="" /> </p>
+	<p>Investing Date:(তারিখ) <br /> <input type="date" name="investing_date" id="" /> </p>
+	<p>Fittings:(জিনিসপত্র) <br /> <input type="text" name="fittings" id="" /> </p>
+	<p>Amount Of Money: (টাকার পরিমান) <br /> <input type="text" name="amount_of_money" id="" /> </p>
 	<input type="submit" value="submit" name="submit"/>
 	
 	</form>
