@@ -6,6 +6,7 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 		die("database connection error");
 	}
 ?>
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -61,6 +62,7 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 			</section>
 			<section class="footeroption">
 				<h2><?php echo "ZamanIT.com"?></h2>
+				<h2><a href="P04PHPVariables.php">Next Exercise is P04PHPVariables.php</a></h2>
 			</section>
 		</div>	
 	</body>
