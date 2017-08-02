@@ -13,7 +13,7 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 	<title>ZamanWebEducation</title>
 	<style type="text/css">
 	.phpcoding{ width:900px; margin: 0 auto; background:<?php echo "#ddd";?>;  min-height:400px; }
-	.headeroption, .footeroption{background:#444; color:#fff; text-align:center;padding:20px}
+	.headeroption, .footeroption{background:#444; color:#ffff; text-align:center;padding:20px}
 	.headeroption h2, .footeroption h2{margin:0}
 	.maincontent{min-height: 400px; padding:20px;}
 	</style>	
@@ -21,7 +21,7 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 	<body>
 		<div class="phpcoding">
 			<Section class="headeroption">
-				<h2><?php echo "This is My Own First Creative Project.";?></h2>
+				<h2><?php echo "This is My Own First Creative Project.</br>Data Insert Program";?></h2>
 			</section>
 			<section class="maincontent">
 			For Search and display MySQL data on your PHP page cleck here <a href="search.php">Search</a>

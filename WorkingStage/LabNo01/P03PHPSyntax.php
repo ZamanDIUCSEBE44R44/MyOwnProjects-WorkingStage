@@ -1,9 +1,29 @@
-<?php
-//Connect to Database
-$connection=mysqli_connect("localhost","root","","parsonal");
-	if(!$connection)
+<?php 
+$output= NULL;
+
+	if(isset($_POST['submit']))
 	{
-		die("database connection error");
+		//Connect to Database
+		$mysqli= NEW MySQLi("localhost","root","","parsonal");
+		$search = $mysqli->real_escape_string($_POST['search']);
+		
+		//Query the database
+		$resultset = $mysqli->query("SELECT * FROM accounting WHERE investing_date LIKE '$search%' ");
+		if($resultset->num_rows > 0)
+		{
+			while($rows = $resultset->fetch_assoc())
+			{				
+				$investing_date = $rows['investing_date'];
+				$fittings =  $rows['fittings'];
+				$amount_of_money = $rows['amount_of_money'];
+
+				$output .= "Investing Date: $investing_date =>Fitting is: $fittings =>Amount of Money is: $amount_of_money <br />";
+			}
+		}
+		else
+		{
+			$output=  "No Result";
+		}
 	}
 ?>
 
@@ -25,40 +45,13 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 				<h2><?php echo "This is My Own First Creative Project.";?></h2>
 			</section>
 			<section class="maincontent">
-			For Search and display MySQL data on your PHP page cleck here <a href="search.php">Search</a>
-			<hr />
-
-					<form action="" method="post">
-						<p>Investing Date:(তারিখ) <br /> <input type="date" name="investing_date" id="" /> </p>
-						<p>Fittings:(জিনিসপত্র) <br /> <input type="text" name="fittings" id="" /> </p>
-						<p>Amount Of Money: (টাকার পরিমান) <br /> <input type="text" name="amount_of_money" id="" /> </p>
-						<input type="submit" value="submit" name="submit"/>
-	
-		</form>
-		<?php 
-		//Insert Form Data Into MYSQL Database Using PHP
-		if(isset($_POST['submit'])){
-			
-				$investing_date= $_POST['investing_date'];
-				$fittings= $_POST['fittings'];
-				$amount_of_money= $_POST['amount_of_money'];
-				//echo $investing_date;
-				//echo $fittings;
-				//echo $amount_of_money;
-				$insert="insert into accounting(investing_date,fittings,amount_of_money)values('".$investing_date."','".$fittings."','".$amount_of_money."')";
-				// Message show on web page to conform
-					$query=mysqli_query($connection, $insert);
-						if($query)
-							{
-								echo "Data Send";
-							}
-						else
-							{
-								echo "Data Not Send !";
-							}
-		}
-		?>
-	
+				<form method="POST">
+					<input type="TEXT" name="search" />
+					<input type="submit" name="submit" value="Search" />
+				</form>
+				<?php echo $output;?>
+				
+				
 			</section>
 			<section class="footeroption">
 				<h2><?php echo "ZamanIT.com"?></h2>
