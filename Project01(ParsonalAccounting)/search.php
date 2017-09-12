@@ -4,11 +4,11 @@ $output= NULL;
 	if(isset($_POST['submit']))
 	{
 		//Connect to Database
-		$mysqli= NEW MySQLi("localhost","root","","parsonal");
+		$mysqli= NEW MySQLi("localhost","root","","money");
 		$search = $mysqli->real_escape_string($_POST['search']);
 		
 		//Query the database
-		$resultset = $mysqli->query("SELECT * FROM accounting WHERE investing_date LIKE '$search%' ");
+		$resultset = $mysqli->query("SELECT * FROM maintenance WHERE investing_date LIKE '$search%' ");
 		if($resultset->num_rows > 0)
 		{
 			while($rows = $resultset->fetch_assoc())

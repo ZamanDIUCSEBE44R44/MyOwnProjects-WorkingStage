@@ -1,6 +1,6 @@
 <?php
 //Connect to Database
-$connection=mysqli_connect("localhost","root","","parsonal");
+$connection=mysqli_connect("localhost","root","","money");
 	if(!$connection)
 	{
 		die("database connection error");
@@ -10,13 +10,14 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>ZamanWebEducation</title>
+	<title>Money Manager Website</title>
+	<link rel="stylesheet" href="css/style.css" />
 	<style type="text/css">
 	.phpcoding{ width:900px; margin: 0 auto; background:<?php echo "#ddd";?>;  min-height:400px; }
 	.headeroption, .footeroption{background:#444; color:#ffff; text-align:center;padding:20px}
 	.headeroption h2, .footeroption h2{margin:0}
 	.maincontent{min-height: 400px; padding:20px;}
-	</style>	
+</style>	
 </head>
 	<body>
 		<div class="phpcoding">
@@ -44,7 +45,7 @@ $connection=mysqli_connect("localhost","root","","parsonal");
 				//echo $investing_date;
 				//echo $fittings;
 				//echo $amount_of_money;
-				$insert="insert into accounting(investing_date,fittings,amount_of_money)values('".$investing_date."','".$fittings."','".$amount_of_money."')";
+				$insert="insert into maintenance(investing_date,fittings,amount_of_money)values('".$investing_date."','".$fittings."','".$amount_of_money."')";
 				// Message show on web page to conform
 					$query=mysqli_query($connection, $insert);
 						if($query)
