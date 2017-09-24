@@ -1,0 +1,124 @@
+*{margin:0; padding:0; outline:0}
+body {
+	font-family: arial;
+	font-size: 16px;
+	line-height: 23px;
+	color: #000;
+}
+.templete{width:960px; margin: 0 auto }/*background:#ddd; margin-bottom:10px*/
+.clear{overflow:hidden}
+.headersection {
+	height: 85px;
+	background: #BB7F18;
+	color: #fff;
+}
+.headersection h2 {
+	font-size: 40px;
+	text-align: center;
+	padding-top: 30px;
+}
+.navsection {
+	background: #EBAF48;
+}
+.navsection ul{margin:0px; padding:0px; list-style:none}
+.navsection ul li{display:block; float:left;}
+.navsection ul li a {
+	display: block;
+	background: #fff;
+	padding: 5px 30px;
+	background: #F0D1C0;
+	margin: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #444;
+	border: 1px solid #D1D187;
+}
+.navsection ul li a:hover {
+	background: #BB7F18;
+	color: #fff;
+}
+
+
+
+.contentsection{background:#FFFFFF}
+.maincontent {
+	width: 628px;
+	background: #F0D1C0;
+	float: left;
+	padding: 8px 20px;
+	margin: 15px;
+	margin-left: 0px;
+	border: 1px solid #555555;
+}
+.samepost{}
+.samepost h2 {
+	padding: 10px;
+	border-bottom: 2px solid #D5B6A5;
+	margin-bottom: 10px;
+	font-size: 25px;
+	color: #AD710A;
+	font-weight: bold;
+}
+.samepost img {
+	float: left;
+	width: 200px;
+	margin-right: 10px;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #99989A;
+}
+.samepost p {
+	font-size: 16px;
+	line-height: 23px;
+	text-align: justify;
+}
+.readmore{float:right}
+.readmore a {
+	text-decoration: none;
+	background: #fff;
+	display: block;
+	padding: 4px 8px;
+	font-size: 20px;
+	border: 1px solid #BB7F18;
+	border-radius: 5px;
+	color: #BB7F18;
+}
+.readmore a:hover{color:#184DC5}
+
+/*
+.maincontent p {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 15px;
+}*/
+.sidebar {
+	width: 253px;
+	background: #F0D1C0;
+	float: right;
+	margin-top: 15px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #555555;
+}
+.samesidebar{}
+.samesidebar h2 {
+	background: #EBAF48;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #BB7F18;
+	color: #333;
+}
+.samesidebar p{}
+.footersection{height:90px; background:#BB7F18}
+.footersection p {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+.
+.
+.
