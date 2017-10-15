@@ -385,7 +385,9 @@ input[type="submit"]:hover{background:#fff; color:#000;}
   text-align: center;
 }
 /* Sort and Filter*/
-.sorting{}
+.sorting{
+	text-align:center;
+}
 * { box-sizing: border-box; }
 
 body {
@@ -406,6 +408,7 @@ body {
   font-size: 16px;
   text-shadow: 0 1px white;
   cursor: pointer;
+  margin-bottom:20px;
 }
 
 .button:hover {
@@ -431,7 +434,9 @@ body {
 /* ---- button-group ---- */
 
 .button-group {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-top: 20px;
 }
 
 .button-group:after {
@@ -453,6 +458,7 @@ body {
 /* ---- isotope ---- */
 
 .grid {
+	text-align:center;
 }
 
 /* clear fix */
@@ -466,7 +472,14 @@ body {
 
 .element-item {
   position: relative;
-  float: left;
-  
+  float: left;  
   color: #262524;
+  width:150px;
+  margin-left:20px;
+}
+.element-item img {
+	width: 100%;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ddd;
 }
